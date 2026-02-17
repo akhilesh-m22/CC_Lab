@@ -1,8 +1,8 @@
-FROM ubuntu:20.04
+FROM python:3.8-slim
 
 WORKDIR /app
 
 COPY . .
 
-CMD ["sleep", "infinity"]
+CMD python3 -m http.server 8080
 
