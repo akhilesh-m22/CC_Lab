@@ -2,10 +2,7 @@ FROM ubuntu:20.04
 
 WORKDIR /app
 
-COPY app.cpp .
+COPY . .
 
-RUN g++ app.cpp -o app
+CMD ["bash"]
 
-EXPOSE 8080
-
-CMD ["./app"]
